@@ -2,9 +2,10 @@
   "name": "pouring",
   "version": "1.0.0",
   "description": "Wine app",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --watch"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
     "css-loader": "^5.2.4",
     "html-webpack-plugin": "^5.3.1",
     "ts-loader": "^9.1.1",
+    "ts-node": "^9.1.1",
     "typescript": "^4.2.4",
     "vue": "^2.6.12",
     "vue-loader": "^15.9.6",

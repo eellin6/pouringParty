@@ -5,10 +5,13 @@ const path = require('path');
 
 module.exports = {
   mode: 'development',
-  entry: path.resolve(__dirname, 'client', 'src', 'index.ts'),
+  entry: path.resolve(__dirname, 'client', 'index.ts'),
   output: {
-    path: path.resolve(__dirname, 'client', 'dist'),
+    path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+  },
+  stats: {
+    children: true,
   },
   resolve: {
     extensions: ['.ts', '.js', '.vue']
@@ -28,7 +31,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html',
+      template: 'client/index.html',
     }),
     new VueLoaderPlugin(),
   ]

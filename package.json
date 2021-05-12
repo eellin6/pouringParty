@@ -42,8 +42,12 @@
     "webpack-cli": "^4.6.0"
   },
   "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.6.0",
+    "pg-hstore": "^2.3.3",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.0.0",
+    "sequelize": "^6.6.2",
     "typeorm": "^0.2.32"
   }
 }

@@ -2,6 +2,7 @@ import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import * as Express from 'express';
 import { resolve } from 'path';
+require('./db/database.ts');
 
 async function bootstrap() {
   const PORT: String | Number = 8080;

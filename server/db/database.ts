@@ -13,3 +13,5 @@ const db = new Sequelize(database, username, password, {
 db.authenticate()
   .then(() => console.info('CONNECTED TO DATABASE'))
   .catch((err = 'err') => console.warn('DB ERROR', err));
+
+  //first connection
